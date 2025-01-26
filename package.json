@@ -12,6 +12,9 @@
     "@astrojs/mdx": "^4.0.5",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.1.5"
+    "@playform/compress": "^0.1.7",
+    "astro": "^5.1.5",
+    "astro-compressor": "^1.0.0",
+    "gsap": "^3.12.7"
   }
 }

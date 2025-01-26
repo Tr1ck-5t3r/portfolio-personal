@@ -1,36 +1,44 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
 
-:root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
-	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-		0 16px 32px rgba(var(--gray), 33%);
+ html.light {
+	--bg-color: #f6fffa; /* Very light greenish-white background */
+	--bg-color-muted: #e8fdf4; /* Soft pastel green */
+	--accent: #4ED0A4; /* Main accent color */
+	--accent-dark: #36a67e; /* Darker green for hover effects */
+	--nav-bg: rgba(21, 60, 47, 0.07); /* Light green navigation highlight */
+	--text-color: #03c73e; /* Deep green text for better readability */
+	--text-muted: #1cff27; /* Softer green for secondary text */
+	--link-color: #007f5f; /* Slightly darker green for better visibility */
+	--border-color: rgba(78, 208, 164, 0.2); /* Soft green borders */
+	--hover-bg: rgba(78, 208, 164, 0.15); /* Light green hover effect */
+	--shadow: 2px 2px 6px rgba(41, 73, 63, 0.632); /* Soft shadow */
+	--mesh-color-1: rgba(255, 255, 255, 0.15); /* Light green mesh effect */
+	--mesh-color-2: rgba(126, 126, 126, 0.07); /* Subtle green mesh */
+	--glow-color: rgba(78, 208, 164, 0.5); /* Soft green glow */
+	--top-glow-color: rgba(78, 208, 164, 0.1); /* Light green top glow */
+	background-color: #f6fffa;
 }
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
+
+html{
+	--bg-color: #081310;
+	--bg-color-muted: #0a1813;
+	--accent: #4ED0A4;
+	--accent-dark: #5ee5b5;
+	--nav-bg:  rgba(2, 39, 21, 0.5);
+	--text-color: #57ffb3;
+	--text-muted: #7bfab6;
+	--link-color: #b6ffe5;
+	--border-color: rgba(78, 208, 164, 0.2);
+	--hover-bg: rgba(78, 208, 164, 0.25);
+	--shadow: 4px 4px 10px rgba(58, 255, 189, 0.753);
+	--mesh-color-1: rgba(78, 208, 164, 0.3);
+	--mesh-color-2: rgba(1, 31, 20, 0.8);
+	--glow-color: rgba(78, 208, 164, 0.4);
+	--top-glow-color: rgba(255, 255, 255, 0.08);
+	background-color: #081310;
 }
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: "Roboto",sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
