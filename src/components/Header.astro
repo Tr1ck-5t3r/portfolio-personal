@@ -6,7 +6,7 @@ import { SITE_TITLE } from '../consts';
 <header id="main-header">
   <div class="nav-container">
     <nav>
-      <h2 class="title"><a href="/">{SITE_TITLE}</a></h2>
+      <h2 ><a  class="title" href="/">{SITE_TITLE}</a></h2>
       <div class="internal-links">
         <HeaderLink href="/">Home</HeaderLink>
         <HeaderLink href="/projects">Projects</HeaderLink>
@@ -21,11 +21,11 @@ import { SITE_TITLE } from '../consts';
         </button>
         <!-- Burger menu for mobile -->
         <button class="burger-menu" id="burgerMenu" aria-label="Open Navigation">
-			<svg width="35px" height="35px" fill-rule="evenodd" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-				<path d="M5 6.5H19V8H5V6.5Z" fill-rule="evenodd"/>
-				<path d="M5 16.5H19V18H5V16.5Z" fill-rule="evenodd"/>
-				<path d="M5 11.5H19V13H5V11.5Z" fill-rule="evenodd"/>
-			</svg>
+        <svg width="35px" height="35px" fill-rule="evenodd" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 6.5H19V8H5V6.5Z" fill-rule="evenodd"/>
+          <path d="M5 16.5H19V18H5V16.5Z" fill-rule="evenodd"/>
+          <path d="M5 11.5H19V13H5V11.5Z" fill-rule="evenodd"/>
+        </svg>
         </button>
       </div>
     </nav>
@@ -43,7 +43,10 @@ import { SITE_TITLE } from '../consts';
   /* Initial styles for the header */
 
   .title{
-	margin:  0 0 0 20px ;
+	  margin:  0 0 0 20px ;
+    font-family:  "Syncopate", serif;
+    font-weight: 400;
+    font-style: normal;
   }
 
   #main-header {
@@ -62,6 +65,7 @@ import { SITE_TITLE } from '../consts';
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 1000;
     transition: all 0.3s ease;
   }
 
@@ -70,6 +74,7 @@ import { SITE_TITLE } from '../consts';
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 1000;
     padding: 10px 5px;
   }
 
@@ -81,26 +86,27 @@ import { SITE_TITLE } from '../consts';
 
   .internal-links {
     display: flex;
+    z-index: 1000;
     gap: 1rem;
   }
 
   .right-menu button {
     background: none;
+    z-index: 1000;
     border: none;
     cursor: pointer;
   }
 
   .burger-menu{
-	color: var(--text-color);
+    color: var(--text-color);
+    display: none;
+    z-index: 1000;
   }
 
   /* Island effect when scrolled */
   .nav-container.scrolled {
-    background-color: var(--highlight-bg);
-    width: 70%;
-    margin: 20px auto 0 auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
+    box-shadow: var(--nav-shadow);
+    z-index: 1000;
   }
 
   	/* Sun/Moon icon styles */
@@ -112,36 +118,57 @@ import { SITE_TITLE } from '../consts';
 
   .mobile-menu {
     display: none;
-    background-color: var(--highlight-bg);
     position: absolute;
     top: 60px;
     right: 0;
     width: 100%;
+    z-index: 1000;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
 
   /* Media queries for mobile responsiveness */
   @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+      z-index: 1000;
+    }
 
 	.right-menu{
 		display: flex;
 		justify-content: center;
+    align-items: center;
+    z-index: 1000;
 		color: var(--text-color);
 	}
 
     .internal-links {
       display: none;
+      z-index: 1000;
+    }
+
+    .mobile-menu {
+      display: none;
+      background-color: var(--bg-muted);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     #mobileMenu.open {
       display: flex;
-	  justify-content: space-around;
-	  align-items: center;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1000;
     }
 
     .nav-container.scrolled {
       width: 100vw;
+      z-index: 1000;
       margin: 0;
       box-shadow: none;
     }

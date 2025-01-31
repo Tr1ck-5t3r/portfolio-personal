@@ -1,0 +1,44 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    backdrop-filter: blur(10px);
+  }
+
+  .hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    background: var(--button-color);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hero-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    transition: transform 0.1s ease-out;
+  }
+
+  .animation h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+
+  .animation p {
+    font-size: 3rem;
+    color: var(--text-color);
+  }

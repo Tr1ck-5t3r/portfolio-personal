@@ -12,9 +12,11 @@
     "@astrojs/mdx": "^4.0.5",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
+    "@astrojs/solid-js": "^5.0.4",
     "@playform/compress": "^0.1.7",
     "astro": "^5.1.5",
     "astro-compressor": "^1.0.0",
-    "gsap": "^3.12.7"
+    "gsap": "^3.12.7",
+    "solid-js": "^1.9.4"
   }
 }
