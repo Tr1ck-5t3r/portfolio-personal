@@ -1,79 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Righteous&family=Syncopate:wght@400;700&display=swap');
 
 html.light {
-	--bg-color: #f8feff; /* Light Pastel Cyan */
-	--bg-muted: #f0f0f0; /* Light Gray Background */
-	--bg-alt: #181818; 
-	--text-color: #121313; /* Deep Teal Text */
-	--text-alt: #ebf0f3; /* light Gray Text */
-	--text-light: #3a3a3a; /* Dark Gray Text */
-	--nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft Black Shadow */
-	--highlight-bg: #212121; /* Light Pastel Cyan */
-	--highlight-text: #f8feff; /* Deep Teal Text */
-	--mesh-1: rgba(42, 43, 44, 0.982);
-	--hero-bg: #090909; 
-	--hero-text: #f8feff;
-	background-color: var(--bg-color); /* Light Pastel Cyan */
-	color: var(--text-color);
-	font-family: 'Quicksand', sans-serif;
-  }
-  html {
-	--bg-color: #141414; /* Pure Black Background */
-	--bg-muted: #1f1f1f; /* Dark Gray Background */
-	--bg-alt: #efefef; /* Darker Gray Background */
-	--text-color: #fafafa; /* Deep Teal Navigation */
-	--text-light: #ffffff; /* lighter Text */
-	--text-alt: #252525; /* light Gray Text */
-	--mesh-1: rgba(220, 220, 220, 0.982);
-	--nav-shadow: 0 2px 4px rgba(255, 255, 255, 0.05); /* Soft white Shadow */
-	--highlight-bg: #f8feff; /* Light Pastel Cyan */
-	--highlight-text: #121313; /* Deep Teal Text */
-	--hero-bg: #090909;
-	--hero-text: #f8feff;
-	background-color: var(--bg-color); /* Pure Black */
-	color: var(--text-color);
-	font-family: 'Quicksand', sans-serif;
-  }
-
- /*  :root {
-	
-	--clr-1: #63dbff;
-	--clr-2: #5fffa4;
-	--clr-3: #ffd167;
-	--clr-4: #f09dff;
-  } */
-  :root {
-	--clr-1: #00c2ff;
-	--clr-2: #33ff8c;
-	--clr-3: #ffc640;
-	--clr-4: #e54cff;
-	
-	--blur: 1rem;
-	--fs: clamp(3rem, 8vw, 7rem);
-	--ls: clamp(-1.75px, -0.25vw, -3.5px);
-  }
+  --bg-color: #f8feff; /* Light Pastel Cyan */
+  --bg-muted: #f0f0f0; /* Light Gray Background */
+  --bg-alt: #181818;
+  --text-color: #121313; /* Deep Teal Text */
+  --text-alt: #ebf0f3; /* light Gray Text */
+  --text-light: #3a3a3a; /* Dark Gray Text */
+  --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft Black Shadow */
+  --highlight-bg: #212121; /* Light Pastel Cyan */
+  --highlight-text: #f8feff; /* Deep Teal Text */
+  --mesh-1: rgba(42, 43, 44, 0.982);
+  --mesh-2: rgba(66, 66, 66, 0.07);
+  --hero-bg: #090909;
+  --hero-text: #f8feff;
+  --waves: #bbd2ee;
+  --clr-1: #228378;
+  --clr-2: #3b74bb;
+  --clr-3: #1f9bb4;
+  background-color: var(--bg-color); /* Light Pastel Cyan */
+  color: var(--text-color);
+  font-family: 'Quicksand', sans-serif;
+}
+html {
+  --bg-color: #141414; /* Pure Black Background */
+  --bg-muted: #1f1f1f; /* Dark Gray Background */
+  --bg-alt: #efefef; /* Darker Gray Background */
+  --text-color: #fafafa; /* Deep Teal Navigation */
+  --text-light: #ffffff; /* lighter Text */
+  --text-alt: #252525; /* light Gray Text */
+  --mesh-1: rgba(220, 220, 220, 0.982);
+  --mesh-2: rgba(220, 220, 220, 0.1);
+  --nav-shadow: 0 3px 6px rgba(255, 255, 255, 0.05); /* Soft white Shadow */
+  --highlight-bg: #f8feff; /* Light Pastel Cyan */
+  --highlight-text: #121313; /* Deep Teal Text */
+  --hero-bg: #090909;
+  --hero-text: #f8feff;
+  --waves: #3b6ba5;
+  --clr-1: #b2f7ef;
+  --clr-2: #7fb8ff;
+  --clr-3: #7bdff2;
+  background-color: var(--bg-color); /* Pure Black */
+  color: var(--text-color);
+  font-family: 'Quicksand', sans-serif;
+}
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* customise scrollbar */
 ::-webkit-scrollbar {
-	width: 10px;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-light);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 6px 12px;
+  font-size: 18px;
+  border: none;
+  background: var(--mesh-2);
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
   }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	background: var(--bg-color);
+
+  .btn:hover {
+    background-color: var(--mesh-1);
+    color: var(--text-alt);
   }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: var(--text-color);
-	border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: var(--text-light);
+
+  .btn:hover::after {
+    content: '↗';
+    font-size: 1em;
+    font-weight: bolder;
+    margin-left: 4px;
   }
