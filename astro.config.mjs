@@ -4,20 +4,21 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import playformCompress from '@playform/compress';
 import compressor from 'astro-compressor';
-import solid from '@astrojs/solid-js';
 import starlight from '@astrojs/starlight';
 
-import preact from '@astrojs/preact';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'www.tarun-rg.in',
+  site: process.env.BASE_URL || 'http://localhost:4321',
+
   integrations: [
     starlight({ title: 'Tarun R G' }),
     mdx(),
     sitemap(),
     playformCompress(),
     compressor({ gzip: true, brotli: false }),
-    solid(),
   ],
+
+  adapter: vercel(),
 });
