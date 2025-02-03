@@ -4,8 +4,10 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import playformCompress from '@playform/compress';
 import compressor from 'astro-compressor';
-
+import solid from '@astrojs/solid-js';
 import starlight from '@astrojs/starlight';
+
+import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,5 +18,6 @@ export default defineConfig({
     sitemap(),
     playformCompress(),
     compressor({ gzip: true, brotli: false }),
+    solid(),
   ],
 });

@@ -1,7 +1,8 @@
 ---
 import { Icon } from '@astrojs/starlight/components';
 import { interests, current_company } from '../consts';
-type IconName = 'seti:java'
+type IconName =
+  | 'seti:java'
   | 'seti:python'
   | 'seti:javascript'
   | 'seti:react'
@@ -23,7 +24,7 @@ type IconName = 'seti:java'
         </div>
       </div>
       <div class="interests">
-        My interests : 
+        My interests :
         <div class="interests-grid">
           {
             interests.map(
@@ -37,7 +38,7 @@ type IconName = 'seti:java'
           }
         </div>
       </div>
-      <div class="call"> 
+      <div class="call">
         <a class="btn" href="/about">More about me!</a>
       </div>
       <div></div>
@@ -200,7 +201,7 @@ type IconName = 'seti:java'
     align-items: center;
   }
 
-  .call{
+  .call {
     background: none;
     display: flex;
     justify-content: center;
