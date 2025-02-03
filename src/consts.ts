@@ -4,6 +4,11 @@
 export const Name = 'Tarun RG';
 export const desig = 'Final year student @ Amrita Vishwa Vidyapeetham Chennai';
 export const profile1 = '/tarun.jpeg';
+export const about = " Hey there!😃 I'm {Name}, final year student🎓 @ Amrita Vishwa Vidhyapeetham Chennai 🏫. \
+        I am a passionate developer who loves to build web applications and explore new technologies. I have experience in building full-stack web applications 🌐 and deep learning based projects 🤖. \
+        I am also the Ex-President of <a =\"https://cognizance-amrita.in/\" >Cognizance Amrita</a>. A tech club that focuses on building a community of developers and tech enthusiasts. \
+        I have organized various workshops, hackathons, and tech talks to help students learn and grow. \
+        Beyond coding, I love reading books📕, exploring new tech trends📈, sharing knowledge, and working on innovative side projects.";
 export const SITE_DESCRIPTION =
   'Tarun RG, final year CSE student at Amrita Vishwa Vidyapeetham Chennai';
 
