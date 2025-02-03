@@ -11,7 +11,7 @@ import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://effective-spoon-gw4xr65xvqjfvjq4.github.dev/',
+  site: 'www.tarun-rg.in',
   integrations: [
     starlight({ title: 'Tarun R G' }),
     mdx(),
