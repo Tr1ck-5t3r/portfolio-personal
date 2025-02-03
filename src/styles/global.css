@@ -1,162 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Syncopate:wght@400;700&display=swap');
 
- html.light {
-	--bg-color: #f6fffa; /* Very light greenish-white background */
-	--bg-color-muted: #e8fdf4; /* Soft pastel green */
-	--accent: #4ED0A4; /* Main accent color */
-	--accent-dark: #36a67e; /* Darker green for hover effects */
-	--nav-bg: rgba(21, 60, 47, 0.07); /* Light green navigation highlight */
-	--text-color: #03c73e; /* Deep green text for better readability */
-	--text-muted: #1cff27; /* Softer green for secondary text */
-	--link-color: #007f5f; /* Slightly darker green for better visibility */
-	--border-color: rgba(78, 208, 164, 0.2); /* Soft green borders */
-	--hover-bg: rgba(78, 208, 164, 0.15); /* Light green hover effect */
-	--shadow: 2px 2px 6px rgba(41, 73, 63, 0.632); /* Soft shadow */
-	--mesh-color-1: rgba(255, 255, 255, 0.15); /* Light green mesh effect */
-	--mesh-color-2: rgba(126, 126, 126, 0.07); /* Subtle green mesh */
-	--glow-color: rgba(78, 208, 164, 0.5); /* Soft green glow */
-	--top-glow-color: rgba(78, 208, 164, 0.1); /* Light green top glow */
-	background-color: #f6fffa;
+html.light {
+  --bg-color: #f8feff;
+  --bg-muted: #c7c7c70d;
+  --bg-alt: #181818;
+  --text-color: #121313;
+  --text-alt: #ebf0f3;
+  --text-light: #3a3a3a;
+  --nav-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --highlight-bg: #212121;
+  --highlight-text: #f8feff;
+  --mesh-1: rgba(42, 43, 44, 0.982);
+  --mesh-2: rgba(66, 66, 66, 0.05);
+  --hero-bg: #090909;
+  --hero-text: #f8feff;
+  --waves: #bbd2ee;
+  --clr-1: #228378;
+  --clr-2: #3b74bb;
+  --clr-3: #1f9bb4;
+  --bg-code: #12223f;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Quicksand', sans-serif;
 }
 
-html{
-	--bg-color: #081310;
-	--bg-color-muted: #0a1813;
-	--accent: #4ED0A4;
-	--accent-dark: #5ee5b5;
-	--nav-bg:  rgba(2, 39, 21, 0.5);
-	--text-color: #57ffb3;
-	--text-muted: #7bfab6;
-	--link-color: #b6ffe5;
-	--border-color: rgba(78, 208, 164, 0.2);
-	--hover-bg: rgba(78, 208, 164, 0.25);
-	--shadow: 4px 4px 10px rgba(58, 255, 189, 0.753);
-	--mesh-color-1: rgba(78, 208, 164, 0.3);
-	--mesh-color-2: rgba(1, 31, 20, 0.8);
-	--glow-color: rgba(78, 208, 164, 0.4);
-	--top-glow-color: rgba(255, 255, 255, 0.08);
-	background-color: #081310;
+html {
+  --bg-color: #141414;
+  --bg-muted: #1f1f1f;
+  --bg-alt: #efefef;
+  --text-color: #fafafa;
+  --text-light: #ffffff;
+  --text-alt: #252525;
+  --mesh-1: rgba(220, 220, 220, 0.982);
+  --mesh-2: rgba(220, 220, 220, 0.1);
+  --nav-shadow: 0 3px 6px rgba(255, 255, 255, 0.05);
+  --highlight-bg: #f8feff;
+  --highlight-text: #121313;
+  --hero-bg: #090909;
+  --hero-text: #f8feff;
+  --waves: #3b6ba5;
+  --clr-1: #b2f7ef;
+  --clr-2: #7fb8ff;
+  --clr-3: #7bdff2;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-	font-family: "Roboto",sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
-}
-main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
-	line-height: 1.2;
-}
-h1 {
-	font-size: 3.052em;
-}
-h2 {
-	font-size: 2.441em;
-}
-h3 {
-	font-size: 1.953em;
-}
-h4 {
-	font-size: 1.563em;
-}
-h5 {
-	font-size: 1.25em;
-}
-strong,
-b {
-	font-weight: 700;
-}
-a {
-	color: var(--accent);
-}
-a:hover {
-	color: var(--accent);
-}
-p {
-	margin-bottom: 1em;
-}
-.prose p {
-	margin-bottom: 2em;
-}
-textarea {
-	width: 100%;
-	font-size: 16px;
-}
-input {
-	font-size: 16px;
-}
-table {
-	width: 100%;
-}
-img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 8px;
-}
-code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
-	border-radius: 2px;
-}
-pre {
-	padding: 1.5em;
-	border-radius: 8px;
-}
-pre > code {
-	all: unset;
-}
-blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
-}
-hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
-}
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
+  margin: 0;
+  padding: 0;
 }
 
-.sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
-	clip: rect(1px 1px 1px 1px);
-	/* maybe deprecated but we need to support legacy browsers */
-	clip: rect(1px, 1px, 1px, 1px);
-	/* modern browsers, clip-path works inwards from each corner */
-	clip-path: inset(50%);
-	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
-	white-space: nowrap;
+/* Customize Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 8px 14px;
+  font-size: 18px;
+  border: none;
+  background: var(--mesh-2);
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--mesh-1);
+  color: var(--text-alt);
+}
+
+.btn:hover::after {
+  content: '↗';
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Project Cards */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: var(--mesh-2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-body {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.project-body h3 {
+  margin: 0 0 0.5rem;
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.project-body p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-2);
+  cursor: pointer;
 }

@@ -1,31 +1,80 @@
 ---
-title: 'Using MDX'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jun 01 2024'
-heroImage: '/blog-placeholder-5.jpg'
+title: 'Snake Zenia'
+description: 'A Java applet emulation of the classic Snake game'
+pubDate: 'May 2022'
+heroImage: 'project1.jpeg'
 ---
 
-This theme comes with the [@astrojs/mdx](https://docs.astro.build/en/guides/integrations-guide/mdx/) integration installed and configured in your `astro.config.mjs` config file. If you prefer not to use MDX, you can disable support by removing the integration from your config file.
+import Code from '../../components/Code.astro';
 
-## Why MDX?
+# TL;DR
 
-MDX is a special flavor of Markdown that supports embedded JavaScript & JSX syntax. This unlocks the ability to [mix JavaScript and UI Components into your Markdown content](https://docs.astro.build/en/guides/markdown-content/#mdx-features) for things like interactive charts or alerts.
+Snake Zenia is a **Java applet** recreation of the **classic Snake game**, developed in **May 2022**.  
+The project features **intuitive controls, high-score tracking, and interactive gameplay**.  
+By leveraging **Java's capabilities**, it demonstrates the **fundamentals of game development** and **user interaction mechanics**.  
 
-If you have existing content authored in MDX, this integration will hopefully make migrating to Astro a breeze.
+This project serves as a **learning resource** for Java developers and gaming enthusiasts interested in **game logic implementation**.  
 
-## Example
+[GitHub Repository](https://github.com/Tr1ck-5t3r/Snake-Zenia)
 
-Here is how you import and use a UI component inside of MDX.  
-When you open this page in the browser, you should see the clickable button below.
+# Introduction
 
-import HeaderLink from '../../components/HeaderLink.astro';
+Snake Zenia is a **Java-based arcade game** inspired by the classic Snake game.  
+Developed in **May 2022**, this project showcases **game programming concepts**, **Java applet functionality**, and **basic UI/UX principles**.  
+It serves as a **hands-on learning experience** for aspiring game developers by demonstrating **event handling, animation, and collision detection** in Java.  
 
-<HeaderLink href="#" onclick="alert('clicked!')">
-	Embedded component in MDX
-</HeaderLink>
+![Game Home Page](/project-5/snake-zenia-2.jpg "Snake Zenia Game Home Page")
 
-## More Links
+# 🚀 Key Features  
 
-- [MDX Syntax Documentation](https://mdxjs.com/docs/what-is-mdx)
-- [Astro Usage Documentation](https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages)
-- **Note:** [Client Directives](https://docs.astro.build/en/reference/directives-reference/#client-directives) are still required to create interactive components. Otherwise, all components in your MDX will render as static HTML (no JavaScript) by default.
+✅ **Classic Snake Gameplay** – The snake grows as it eats food, avoiding collisions.  
+🎮 **User-Friendly Interface** – Simple, responsive, and easy-to-navigate controls.  
+📈 **High Score Tracking** – Keeps track of the player’s highest score.  
+⚡ **Interactive Gameplay** – Smooth movement and real-time interaction.  
+🎨 **Customizable Settings** – Modify game speed and appearance.  
+
+# 🛠️ Tech Stack  
+
+- **Programming Language**: Java  
+- **Development Environment**: Any Java-compatible IDE (Eclipse, IntelliJ, NetBeans)  
+- **Graphics & UI**: Java AWT & Swing  
+- **Game Logic**: Java event handling and key listeners  
+
+# 📸 Screenshots  
+
+![Game Play](/project-5/snake-zenia-1.jpg "Snake Zenia Game Play")  
+![Game Mechanics](/project-5/snake-zenia-3.jpg "Snake Zenia Game Mechanics")  
+![High Score](/project-5/snake-zenia-4.jpg "High Score Tracking")  
+
+# 📚 How to Play  
+
+To set up and play **Snake Zenia**, follow these steps:
+
+1. **Clone the repository**  
+    <Code lang="bash">
+    ```sh
+    git clone https://github.com/Tr1ck-5t3r/Snake-Zenia.git
+    cd Snake-Zenia
+    ```
+    </Code>
+2. **Open the project in an IDE** (e.g., IntelliJ, Eclipse, NetBeans)  
+3. **Compile the Java files** using the terminal:  
+    <Code lang="bash">
+    ```sh
+    javac Homepage.java
+    javac SnakeGame.java
+    ```
+    </Code>
+4. **Run the game** using `Homepage.java`:  
+    <Code lang="bash">
+    ```sh
+    java Homepage.java
+    ```
+    </Code>
+
+# Conclusion  
+
+Snake Zenia is a **modern take** on the classic **arcade Snake game**, demonstrating the potential of **Java applets** in game development.  
+By recreating **classic game mechanics**, this project provides **a fun and educational experience** for developers and gaming enthusiasts.  
+It highlights **Java’s versatility in game development** and serves as a **great starting point for those interested in learning game programming**.  
+With its **smooth gameplay, interactive UI, and high-score tracking**, Snake Zenia captures the **nostalgia of classic gaming** while offering a **simple yet engaging user experience**.
